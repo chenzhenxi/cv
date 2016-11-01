@@ -1,0 +1,106 @@
+<!doctype html>
+<html >
+	<head>
+		<title>闹闹马戏团</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<!-- 是否全屏  运行时使用window.navigator.standalone判断-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 是否显示状态栏default|black|black-translucent-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--是否识别数字为电话号码-->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+		<meta name="description" content="">
+
+		<link rel="stylesheet" href="css/style.css">
+		<?php } ?>
+	</head>
+	<body>
+		<!--  顶部导航：积分，进度 -->
+		<header id='header'>
+			<!-- 老的暂停按钮 <div class="btn notap"><span class='left'></span><span class='right'></span></div> -->
+			<!--<span class="score text-effect">0</span>-->
+			<!-- <div class="progress-bar green glow"> 老的时间
+    			<span style="width: 100%"></span><em class='text-effect'>60</em>
+			</div>		 -->
+		</header>
+		
+		<div id="main" class="main">
+			<canvas id="canvas" class="notap"></canvas>
+			<div class="item notap" id='control_panel'>
+				<span class='span_messagebox' id='span_messagebox'>
+					<span class='span_score' id='span_score'>
+					</span>
+				</span>
+			</div>
+		</div>
+		<div id="fps"></div>
+		<div class="entrance notap"><!--入口页面-->
+			<div class="main_menu" id="mainMenu">
+
+				<ul>
+					<li id = 'oneminute'></li>
+					<li id = 'night'></li>
+					<li id = 'about'></li>
+					<li id = 'help'></li>
+				</ul>
+				<div class="ranking_btn_div" id="rankingBtn" ></div>
+			</div>
+		</div>
+		<div class='div_messagebox' id='div_messagebox'>
+			<span class="span_tool" id='messagebox_tool'></span>
+			<span class="span_tool_text" id='messagebox_tool_text'></span>
+		</div>
+		<div class='div_screen' id='div_screen'>
+			<div class='div_screen_body_diffheight'>
+				<div class="div_screen_help_btn" id="divScreenHelpBtn"></div>
+			</div>
+			<div class='div_screen_body'>
+				<div class="div_screen_btn_body">
+					<span class="screen_btn_bg screen_prize_span" id="screen_prize_span">
+						<div class='final_score_diffheight_div'></div>
+						<div id='final_score_div'></div>
+					</span>
+					<div class='screen_resume_diffheight' id='screen_resume_diffheight_div'></div>
+					<span class="screen_btn_bg screen_resume_span" id ='resume'></span>
+					<span class='screen_btn_bg screen_restart_quit_span' id="screen_restart_quit_span">
+						<div class='diff_height_div'></div>
+						<div class='btn_div' id="restart"></div>
+						<div class='diff_height_div'></div>
+						<div class='btn_div' id="quit"></div>
+					</span>
+				</div>
+				<div class="div_screen_body_help_btn" id="divScreenBodyHelpBtn"></div>
+			</div>
+			<span class='span_screen_count' id='crab_count'>0</span>
+			<span class='span_screen_count' id='fox_count'>0</span>
+			<span class='span_screen_count' id='chick_count'>0</span>
+			<span class='span_screen_count' id='frog_count'>0</span>
+			<span class='span_screen_count' id='elephant_count'>0</span>
+			<span class='span_screen_count' id='pig_count'>0</span>
+			<span class='span_screen_count' id='bat_count'>0</span>
+			<span class='span_screen_count' id='panda_count'>0</span>
+		</div>
+		<div id='help_div' class="help_div">
+			<div class="help_div_0" id="help_div_0"></div>
+			<div class="help_div_1" id="help_div_1"></div>
+			<div class="help_div_about_us" id="help_div_about_us"></div>
+			<div class="help_div_ranking" id="help_div_ranking"></div>
+		</div>
+<div class='btn_pause' id='btn_pause'></div>
+<div class='div_timer' id='div_timer'>
+	<span class='time_bg time_num_6'></span><span class='time_bg time_num_0'></span>
+</div>
+	</body>
+		<script type="text/javascript">
+			//Hides the addressbar on non-post pages 
+			function hideURLbar() { window.scrollTo(0,1); } 
+			addEventListener('load', function() { setTimeout(hideURLbar, 100); }, false ); 
+		</script> 
+		<script src="js/lib/PxLoader.js"></script>
+		<script src="js/lib/PxLoaderImage.js"></script>
+		<script src="js/cell.js"></script>
+		<script src="js/zoo.js"></script>
+</html>
