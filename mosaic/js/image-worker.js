@@ -1,3 +1,4 @@
+importScripts('mosaic.js');
 importScripts('fe-constant.js');
 importScripts('utils.js');
 let workerManager = createMessageManager(self);

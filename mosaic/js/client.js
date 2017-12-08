@@ -1,5 +1,5 @@
 "use strict";
-let imageWorker = new Worker('/js/image-worker.js');
+let imageWorker = new Worker('/js/image-worker.js?a1');
 let imageWorkerManager = createMessageManager(imageWorker);
 
 let actions = [];
